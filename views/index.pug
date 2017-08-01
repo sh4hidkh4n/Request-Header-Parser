@@ -17,16 +17,21 @@ html
     link(type='text/css', rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css')
   body
     .container
-      h1.center Your requests provide these informations
-      table.bordered
-        thead
-          th Key
-          th Value
-        each value, index in parsedHeader
-          tr
-            td
-              b=index.toUpperCase()
-            td=value
-      h3 Json Response
-      h4
-        a(href='https://parse-my-request.glitch.me/json') /json                
+      .card-panel
+        h1.center Your requests provide these informations
+        table.bordered
+          thead
+            th Key
+            th Value
+          each value, index in parsedHeader
+            tr
+              td
+                b=index.toUpperCase()
+              td=value
+        h3 Json Response
+        h4
+          a(href='https://parse-my-request.glitch.me/json') /json    
+        .col.s12.center
+          p Created By Shahid Kamal
+          a.twitter-follow-button(href='https://twitter.com/sh4hidkh4n', data-show-count='false') Follow @sh4hidkh4n
+          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
